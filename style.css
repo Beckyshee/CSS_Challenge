@@ -1,5 +1,342 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
 
-body{
-    background-color: #D0BFFF;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    background-color: rgb(194, 190, 190)
+   
+}
+      /*global*/
+    .container{
+        
+       height: 100vh;
+        background-image: url(images/cover.png);
+        
+    }
+
+    header ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    /*header*/
+    header{
+        background-color: rgb(196, 222, 255);
+        min-height: 70px;
+        border-bottom: rgb(0, 0, 0.3,  0) 0.3px solid;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    header a{
+        color:black;
+        text-decoration:none;
+        text-transform: uppercase;
+        font-size:16px;
+    }
+
+    
+
+    header li{
+        
+        display: inline;
+        padding: 0 20px 0 20px;
+        align-items: center;
+    }
+
+    header #branding{
+        
+        margin:0
+    }
+    
+
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        gap: 3rem;
+        
+    }
+
+   
+    header a:hover{
+        color: cornflowerblue;
+        font-weight: bold;
+    }
+
+    /*showcase*/
+    .showcase{
+     min-height: 400px; 
+     
+     text-align: center;
+     color: whitesmoke;
+    }
+
+    showacase h1{
+        margin-top: 100px;
+        font-size: 80px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        
+    }
+
+    showcase p{
+        font-size: 20px;
+    }
+
+
+    /*cards*/
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        gap: 17rem;
+        
+         }
+         
+    .card-1{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 180px;
+        height: 15vh;
+    }
+
+    .card-2{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 180px;
+        height: 15vh;
+    }
+
+    .card-3{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(19, 83, 179);
+        width: 180px;
+        height: 15vh;
+    }
+
+
+    /*rows*/
+    .rows{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 50vh;
+    
+        background-color: white;
+        gap: 10rem;
+    }
+
+    /*industry sec*/
+    .industry{
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /*People section*/
+    .people{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        gap: 8rem;
+        
+
+    }
+
+    .person{
+        display: flex;
+        width: 150px;
+        height: 20vh;
+        
+        justify-content: space-around;
+        
+        
+    }
+
+    /*Company-logos*/
+    .images{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .newsletter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #762B88;
+        margin: 200px;
+        height: 10vh;
+        background-image: linear-gradient(
+            90deg,
+            rgb(90, 35, 90, 0.3),
+            rgba(233, 62, 182, 0.4)
+        
+        );
+    }
+    .subscribe h3{}
+
+    .pricing{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .numbers{
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-style: solid;
+        border-color: rgb(240, 237, 237);
+        border-radius: 5px;
+
+    }
+    .zero{
+        display: flex;
+        gap: 1rem;
+    }
+    .next{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .zero{
+        display: flex;
+    }
+    .btn{
+        background-color: #6499E9;
+    }
+
+    .subscribe{
+        color: white;
+        background-color: blue;
+
+    }
+    .branches{
+        display: flex;
+        background-color: #252B42;
+        height: 75vh;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        text-transform: center;
+        display: flex;}
+    .image{}
+    .world{
+        
+    }
+    .appointment{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -100px;
+        box-sizing: border-box ;
+        
+    }
+    .appointment form{
+        background-color: white;
+        text-align: left;
+        
+        padding: 145px;
+       
+    }
+    .appointment img{
+        width: 230px;
+    
+
+    }
+    .everything{
+        background-color: white;
+    }
+    
+    
+
+    .consulting{
+      display: flex; 
+      margin-bottom: 50px; 
+    }
+
+    .separate{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .contact button{
+        color: white;
+        float: right;
+        background-color: #007ACC;
+        
+        
+    }
+
+
+    .company-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8rem;
+    }
+    
+    
+
+
+
+
+
+
+
+   
+
+    /*media queries*/
+    @media(max-width:768px){
+        header #branding,
+        header nav,
+        header nav li,
+        #community h1,
+        #community form,
+        #boxes .box,
+        article#main-col,
+        aside#sidebar{
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+        header{
+            padding-bottom: 20px;
+        }
+        showcase h1{
+            margin-top: 40px;
+        }
+        #community button, .quote button{
+            display: block;
+            width: 100%;
+        }
+        #community form input[type="email"], .quote input, .quote textarea{
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+
+    
+
